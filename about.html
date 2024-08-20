@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <!-- Custom style link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <div class="main_menu">
+            <div class="container">
+                <div class="logo_col">
+                    <img src="images/logo.png" alt="main logo">
+                </div>
+                <div class="nav_col">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+<section class="inner_banner">
+<img src="images/inner-banner_1.jpg" alt="">
+</section>
+
+<section class="staff_profile">
+    <div class="container">
+        <div class="section_heading">
+            <h2>Our Staff </h2>
+        </div>
+        <div class="all_staff">
+            <div class="staff">
+                <img src="images/client1.jpg" alt="">
+                <h3>MS MIRA</h3>
+                <span>Lorem, ipsum dolor.</span>
+            </div>
+            <div class="staff">
+                <img src="images/client1.jpg" alt="">
+                <h3>MS MIRA</h3>
+                <span>Lorem, ipsum dolor.</span>
+            </div>
+            <div class="staff">
+                <img src="images/client1.jpg" alt="">
+                <h3>MS MIRA</h3>
+                <span>Lorem, ipsum dolor.</span>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+<section class="about_company">
+    <div class="container">
+        <div class="section_heading">
+            <h2>Compnay About</h2>
+        </div>
+        <div class="about">
+            <div class="left">
+                <img src="images/restaurantowner.jpg" alt="">
+
+            </div>
+            <div class="right">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, tenetur earum porro totam aliquam nisi ullam suscipit accusamus aspernatur deleniti!</p><br>
+                <p class="extra_m">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia in facilis suscipit excepturi alias recusandae natus sit impedit similique deleniti maiores dolorum quia soluta, quos aspernatur distinctio eaque accusamus rerum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ducimus ut aspernatur vel amet odio rem nobis nam eaque fugiat.</p>
+                <a href="#">More info</a>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+    
+    <footer>
+        <div class="container">
+            <p>© 2024 NHRF</p>
+            <div class="datetime" id="datetime"></div>
+        </div>
+    </footer>
+
+
+    <Script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true,
+            };
+            document.getElementById('datetime').textContent = now.toLocaleString('en-US', options);
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime(); // initial call to display immediately
+
+    </Script>
+
+
+
+
+</body>
+
+</html>

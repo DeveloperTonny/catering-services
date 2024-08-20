@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header .main_menu {
+    background-color: #fad4a1;
+    padding: 10px 0;
+}
+
+header .main_menu .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+header .main_menu .container .logo_col img {
+    width: 60%;
+}
+
+header .main_menu .container .nav_col {
+    text-align: right;
+    align-content: center;
+}
+
+header .main_menu .container .nav_col ul {
+    list-style-type: none;
+}
+
+header .main_menu .container .nav_col ul li {
+    display: inline-block;
+}
+
+header .main_menu .container .nav_col ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 1%);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 10px;
+}
+
+header .main_menu .container .nav_col ul li a:hover {
+    color: #BE272B;
+}
+
+/* End Header style */
+.home_banner img {
+    width: 100%;
+}
+
+.food_item_section {
+    padding: 60px 0;
+}
+
+.section_heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section_heading h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #FFB046;
+    text-transform: uppercase;
+}
+
+.food_item_section .container .main_col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.food_item_section .container .main_col .col {
+    border: 2px solid #fad4a1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.food_item_section .container .main_col .col img {
+    width: 100%;
+}
+
+.food_item_section .container .main_col .col .food_details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.food_item_section .container .main_col .col .food_details .food_rateing {
+    text-align: right;
+}
+
+.food_item_section .container .main_col .col .food_details .food_rateing i {
+    color: #FFB046;
+}
+
+.food_item_section .container .main_col .col .food_details h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 24px;
+}
+
+footer {
+    background-color: #FFB046;
+    padding: 10PX 0;
+}
+
+footer .container {
+    text-align: center;
+
+}
+
+.feedback_sections {
+    padding: 60px 0;
+}
+
+.all_feedback {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.feedback_sections .feedback {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid #FFB046;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: #ffb046 1px 4px 5px -1px;
+}
+
+.feedback_sections .feedback img {
+    width: 100px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.client {
+    align-content: center;
+}
+
+.reating {
+    margin-top: 10px;
+}
+
+.reating i {
+    color: #FFB046;
+}
+
+.faq_section {
+    padding: 60px 0;
+}
+
+.gallery_sections {
+    padding: 60px 0;
+}
+
+.gallery_sections .container .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.gallery_sections .container .gallery img {
+    width: 100%;
+}
+
+.inner_banner img {
+    width: 100%;
+}
+
+.staff_profile {
+    padding: 60px 0;
+}
+
+.all_staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.all_staff img {
+    width: 100%;
+}
+
+.about_company {
+    padding: 60px 0;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about .right {
+    align-content: center;
+}
+
+.right h2 {
+    margin-bottom: 30px;
+}
+
+.right a {
+    text-decoration: none;
+    color: white;
+    background: #ffb046;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.about .right .extra_m {
+    margin-bottom: 30px;
+}
+
+.form_group1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #FFB046;
+}
+
+.contact_form {
+    padding: 60px 0;
+}
+
+textarea {
+    margin-top: 15px;
+}
+
+button[type=submit] {
+
+    padding: 10px 35px;
+    background: #ffb046;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 22px;
+
+}
